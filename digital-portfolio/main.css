@@ -289,7 +289,7 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;  /* ⭐ IMPORTANT */
+    align-items: center;  
     gap: 15px;
     margin-bottom: 30px;
     border: none;
@@ -350,4 +350,5 @@ li {
     cursor: pointer;
     
 }
+
 
