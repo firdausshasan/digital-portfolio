@@ -1,0 +1,353 @@
+body{
+    font-family: Arial;
+    margin: 0;
+
+}
+
+header{
+    background-color: rgb(26, 127, 215);
+    padding: 20px 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+
+h1{
+    font-weight: 1000;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+nav a{
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: rgb(0, 0, 132);
+}
+
+.about-me{
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.firdaus{
+    border-radius: 200px;
+    justify-items: center;
+}
+
+.about-text{
+    max-width: 900px;
+
+}
+
+.about-text h3{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.about-text p{
+    text-align: justify;
+    font-size: 17px;
+}
+
+.typing-text {
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #00aaff; 
+  font-size: 28px;
+  animation: typing 3s steps(25) forwards, blink 0.7s infinite;
+}
+
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 350px; } 
+}
+
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.about-text button{
+  margin: 5px;
+  padding: 8px 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: rgb(184, 184, 184);
+  border: none;
+  border-radius: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: rgb(90, 100, 100);
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.about-text button:hover {
+  background: #007bff;       
+  color: white;              
+  border-color: #007bff;
+}
+
+.container1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 30px;
+    border: none;
+
+}
+
+.education-internship-box{
+    background-color: rgb(184, 184, 184);
+    border-radius: 20px;
+    padding: 20px;
+    width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1.25);
+    color: rgb(0, 0, 0);
+    text-align: center;
+
+    
+}
+
+.education-internship{
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.title{
+    font-size: 30px;
+    font-weight: 1000;
+    margin-bottom: 10px;
+}
+
+.pppk-img{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1.25);;
+}
+
+li {
+  list-style: none;
+  text-align: justify;
+}
+
+.internship-inner-list li {
+  list-style: none;
+  position: relative;
+  padding-left: 25px;
+  font-size: 17px;
+}
+
+.internship-inner-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #2b1cff; 
+  font-weight: bold;
+}
+
+.download-button{
+    background-color: rgb(26, 127, 215);
+    color: white;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1.25);;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    
+    
+}
+.download-button:hover{
+    transform: translateY(4px);
+}
+
+.projects{
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    background-color: rgb(0, 12, 147);
+    color: white;
+}
+
+.projects-title{
+    font-size: 30px;
+    font-weight: 1000;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.container2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 0px;
+    border: none;
+}
+
+.projects-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 360px;
+    border-radius: 20px;
+    padding: 17px;
+    width: 240px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1.25);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden; 
+    margin-bottom: 0px;
+}
+
+.projects-description{
+    margin-top: 20px;
+    padding-top: 15px;
+    font-size: 15px;
+    font-weight: 10;
+   
+}
+
+
+.projects-box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);  
+    z-index: 0;
+}
+
+
+.projects-box * {
+    position: relative;
+    z-index: 1;
+}
+.github-button{
+    margin-top: auto;
+    align-self: flex-end;
+    font-weight: bold;
+    padding: 8px 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: rgb(184, 184, 184);
+    border: none;
+    border-radius: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: rgb(90, 100, 100);
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.github-button:hover {
+  background: #007bff;       
+  color: white;              
+  border-color: #007bff;
+}
+
+.certifications{
+    background-color: rgb(0, 12, 147);
+    color: white;
+    margin-top: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: center;
+}
+
+.certifications-title{
+    font-size: 30px;
+    font-weight: 1000;
+    margin-bottom: 30px;
+    text-align: center;
+    
+}
+
+.container3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  /* ⭐ IMPORTANT */
+    gap: 15px;
+    margin-bottom: 30px;
+    border: none;
+}
+
+.certification-box{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(184, 184, 184);
+    border-radius: 20px;
+    padding: 10px;
+    width: 830px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1.25);
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    font-size: 12px;
+    justify-content: space-between;
+
+
+    margin: 0;
+}
+
+.contact-me{
+    background-color: rgb(184, 184, 184);
+    color: black;
+    text-align: center;
+    padding: 17px 0;
+}
+
+.contact-title{
+    font-size: 30px;
+    font-weight: 1000;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+.container4{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.contact-box{
+    margin: 5px;
+    padding: 8px 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: rgb(184, 184, 184);
+    border: none;
+    border-radius: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    
+}
+
