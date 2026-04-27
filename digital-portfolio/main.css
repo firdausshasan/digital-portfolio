@@ -400,5 +400,34 @@ li {
     
 }
 
+@media (max-width: 768px) {
+
+    .about-me {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .firdaus {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .container1,
+    .container2,
+    .container4,
+    .nadma-picture {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .education-internship-box,
+    .nadma-box,
+    .certification-box,
+    .projects-box {
+        width: 90%;
+    }
+}
+
 
 
