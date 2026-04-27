@@ -407,5 +407,60 @@ li {
     
 }
 
+/* Mobile Responsive Overrides */
+@media (max-width: 768px) {
+    
+    /* 1. Stack the About Me section vertically */
+    .about-me {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    /* 2. Fix the Typing Animation width for mobile */
+    @keyframes typing {
+        from { width: 0; }
+        to { width: 100%; } 
+    }
+    .typing-text {
+        white-space: normal; /* Allow text to wrap on small screens */
+        width: auto;
+        border-right: none;
+    }
+
+    /* 3. Reset fixed-width containers to 100% */
+    .container1, .container2, .container4, .nadma-picture {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .education-internship-box, 
+    .nadma-box, 
+    .projects-box, 
+    .certification-box {
+        width: 90% !important; /* Forces boxes to fit the screen */
+        max-width: none;
+    }
+
+    /* 4. Adjust Projects Grid */
+    .container2 {
+        gap: 20px;
+    }
+
+    /* 5. Fix Certification boxes to stack items inside */
+    .certification-box {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    /* 6. Navigation: Stack links or make them smaller */
+    nav {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+
 
 
