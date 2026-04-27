@@ -67,6 +67,7 @@ nav a:hover{
     font-size: 17px;
 }
 
+
 .typing-text {
   width: 0;
   white-space: nowrap;
@@ -119,6 +120,22 @@ nav a:hover{
 
 }
 
+.nadma-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    border: none;
+
+}
+
+.nadma-picture{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+}
+
 .education-internship-box{
     background-color: rgb(184, 184, 184);
     border-radius: 20px;
@@ -131,6 +148,17 @@ nav a:hover{
     
 }
 
+.nadma-box{
+    background-color: rgb(184, 184, 184);
+    border-radius: 20px;
+    padding: 20px;
+    width: 1060px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1.25);
+    color: rgb(0, 0, 0);
+    text-align: center;
+
+    
+}
 .education-internship{
     font-size: 17px;
     font-weight: bold;
@@ -159,6 +187,22 @@ li {
 }
 
 .internship-inner-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #2b1cff; 
+  font-weight: bold;
+}
+
+.nadma-inner-list li {
+  list-style: none;
+  position: relative;
+  padding-left: 25px;
+  font-size: 17px;
+}
+
+.nadma-inner-list li::before {
   content: "✔";
   position: absolute;
   left: 0;
@@ -315,11 +359,16 @@ li {
     margin: 0;
 }
 
-.contact-me{
+.contact-me {
     background-color: rgb(184, 184, 184);
     color: black;
     text-align: center;
     padding: 17px 0;
+    overflow: hidden; /* prevents margin collapse */
+}
+
+.contact-me p {
+    margin: 0;
 }
 
 .contact-title{
@@ -351,71 +400,5 @@ li {
     
 }
 
-/* ----------- MOBILE RESPONSIVE----------- */
-@media (max-width: 768px) {
-
-  
-  .about-me {
-    flex-direction: column;
-    text-align: center;
-    margin-left: 0;
-  }
-
-  .firdaus {
-    width: 250px !important;
-  }
-
-  .about-text {
-    max-width: 90%;
-    margin: 0 auto;
-  }
-
-  
-  .container1 {
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-  }
-
-  .education-internship-box {
-    width: 90%;
-  }
-
-  
-  .container2 {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .projects-box {
-    width: 90%;
-    height: auto;
-  }
-
-  
-  .certification-box {
-    width: 90%;
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-  }
-
-  .certification-box button {
-    align-self: center;
-  }
-
-  
-  .container4 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
-
-  .contact-box {
-    width: 90%;
-    text-align: center;
-  }
-}
 
 
