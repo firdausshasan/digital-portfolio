@@ -136,6 +136,11 @@ nav a:hover{
     gap: 40px;
 }
 
+.nadma-picture img {
+    width: 100%;
+    max-width: 300px;
+}
+
 .education-internship-box{
     background-color: rgb(184, 184, 184);
     border-radius: 20px;
@@ -402,6 +407,10 @@ li {
 
 @media (max-width: 768px) {
 
+    body {
+        overflow-x: hidden;
+    }
+
     .about-me {
         flex-direction: column;
         align-items: center;
@@ -411,6 +420,18 @@ li {
     .firdaus {
         width: 100%;
         max-width: 300px;
+    }
+
+    .typing-text {
+        white-space: normal;
+        width: auto;
+        border-right: none;
+        animation: none;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
     }
 
     .container1,
@@ -427,7 +448,14 @@ li {
     .projects-box {
         width: 90%;
     }
+
+    .certification-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nadma-picture img {
+        width: 100%;
+        max-width: 300px;
+    }
 }
-
-
-
